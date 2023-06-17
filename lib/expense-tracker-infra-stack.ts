@@ -7,7 +7,7 @@ import * as s3 from "aws-cdk-lib/aws-s3"
 import * as s3Notifications from "aws-cdk-lib/aws-s3-notifications"
 import { Construct } from "constructs"
 
-export class ExpenseTrackerInfraStack extends cdk.Stack {
+export class ExpenseTrackerInfrastructureStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props)
     const { S3_BUCKET_NAME, CLOUDFRONT_DISTRIB_ID, CLOUDFRONT_DOMAIN_NAME } =
