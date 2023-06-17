@@ -1,4 +1,3 @@
-import "dotenv/config"
 import * as cdk from "aws-cdk-lib"
 import * as lambda from "aws-cdk-lib/aws-lambda"
 import * as lambdaNodeJs from "aws-cdk-lib/aws-lambda-nodejs"
