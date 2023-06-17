@@ -39,13 +39,21 @@ Run the following command to deploy the stack. This may take a few minutes.
 $ npm run cdk deploy
 ```
 
-Once the stack has been deployed, you may run the following command to see your CloudFront distributions:
+Once the stack has been deployed, you may run the following command to see your CloudFront distributions.
 
 ```sh
 $ aws cloudfront list-distributions
 ```
 
 Find the distribution created by the stack, and save the distribution domain name. You may now use this domain for serving images in the Expense Tracker app.
+
+Run the following command to see your S3 buckets.
+
+```sh
+$ aws s3 ls
+```
+
+Find the storage bucket created by the stack, and save the bucket name. Likewise, you now may use this bucket for the Expense Tracker app.
 
 ## Other commands
 
